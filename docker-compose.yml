@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  api:
+    image: drendounet/simple-api:1
+    container_name: simple-api
+    ports:
+    - "8000:8000"
+    environment:
+      - ENV=production
+    restart: unless-stopped
+    volumes:
+      - ./app:/app/app  # Hot reload pour le dev

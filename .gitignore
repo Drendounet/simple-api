@@ -4,16 +4,23 @@ __pycache__/
 *$py.class
 *.so
 .Python
-venv/
 env/
-ENV/
+venv/
+.venv/
+*.egg-info/
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Database
+*.db
+*.sqlite3
+
+# Environment
+.env
+.env.local
